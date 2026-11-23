@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(openharmor)
+add_library(openharmor SHARED harmor_engine.cpp)
+target_compile_features(openharmor PRIVATE cxx_std_17)
+target_compile_options(openharmor PRIVATE -O2)
